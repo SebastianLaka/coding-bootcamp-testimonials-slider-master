@@ -3,9 +3,18 @@
 </script>
 
 <template>
-  <div></div>
+  <div>
+    <p>Test</p>
+  </div>
 </template>
 
 <style scoped lang="scss">
-
+body{
+  div{
+    background-color: $red;
+    p{
+      color: $blue;
+    }
+  }
+}
 </style>
