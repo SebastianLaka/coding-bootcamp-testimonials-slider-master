@@ -1,6 +1,4 @@
-<script setup>
-
-</script>
+<script setup></script>
 
 <template>
   <div>
@@ -8,14 +6,5 @@
   </div>
 </template>
 
-<style scoped lang="scss">
-body{
-  div{
-    @include flex;
-    background-color: $red;
-    p{
-      color: $blue;
-    }
-  }
-}
+<style lang="scss">
 </style>
