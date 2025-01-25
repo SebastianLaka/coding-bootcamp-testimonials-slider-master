@@ -11,6 +11,7 @@
 <style scoped lang="scss">
 body{
   div{
+    @include flex;
     background-color: $red;
     p{
       color: $blue;

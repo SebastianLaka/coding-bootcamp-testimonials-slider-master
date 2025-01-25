@@ -23,7 +23,9 @@ export default defineConfig({
     preprocessorOptions: {
       scss: {
         additionalData: `
-        @use "@/assets/scss/basic-styles/basic-app-styles.scss" as *;`,
+        @use "@/assets/scss/basic-styles/basic-app-styles.scss" as *;
+        @use "@/assets/scss/mixins/_test.scss" as *;
+        `,
       }
     }
   }
