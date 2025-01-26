@@ -5,13 +5,14 @@
   body {
     min-height: 100svh;
     .root {
-    @include flex-row-between;
+      @include flex-row-between;
       .test1 {
         width: 100%;
         background-color: $red;
         p {
           color: $blue;
           font-size: $primary-font-size;
+          font-family: $font-inter;
         }
       }
     }
