@@ -4,7 +4,7 @@
 @media (min-width: $breakpoint-tablet) {
   body {
     .root {
-      height: 100dvh;
+      height: 100svh;
       .test1 {
         @include flex-center;
         background-color: $yellow;

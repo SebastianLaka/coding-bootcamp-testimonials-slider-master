@@ -3,7 +3,7 @@
 @use '../mixins/_test.scss' as *;
 @media (min-width: $breakpoint-small) {
   body {
-    min-height: 100dvh;
+    min-height: 100svh;
     .root {
     @include flex-row-between;
       .test1 {
