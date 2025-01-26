@@ -9,9 +9,12 @@
       .test1 {
         width: 100%;
         background-color: $red;
+        h1{
+          color: $dark-blue-color;
+        }
         p {
-          color: $blue;
-          font-size: $primary-font-size;
+          color: $grayish-blue-color;
+          font-size: $basic-font-size;
           font-family: $font-inter;
         }
       }
