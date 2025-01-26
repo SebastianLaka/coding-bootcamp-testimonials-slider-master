@@ -1,15 +1,14 @@
-@use "../basic-styles/_reset.scss" as *;
-@use '../basic-styles/_colors.scss' as *;
-@use "./breakpoints" as *;
-@use "../mixins/_test.scss" as *;
-@media (min-width: $breakpoint-tablet){
-    body {
-        div {
-          @include flex-center;
-          background-color: $yellow;
-          p {
-            color: $black;
-          }
-        }
-      }
+@use '../basic-styles/basic-app-styles.scss' as *;
+@use './_breakpoints.scss' as *;
+@use '../mixins/_test.scss' as *;
+@media (min-width: $breakpoint-tablet) {
+  body{
+  .test1 {
+    @include flex-center;
+    background-color: $yellow;
+    p {
+      color: $black;
+    }
+  }
+}
 }
