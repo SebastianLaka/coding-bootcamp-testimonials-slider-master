@@ -1,12 +1,9 @@
-<script setup></script>
+<script setup>
+import fontsComponent from './components/fonts-component.vue';
+</script>
 
 <template>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-    rel="stylesheet"
-  />
+<fontsComponent/>
   <div class="root">
     <div class="test1">
       <h1>header 1</h1>
