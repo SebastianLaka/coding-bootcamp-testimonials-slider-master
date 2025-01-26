@@ -2,13 +2,17 @@
 @use './_breakpoints.scss' as *;
 @use '../mixins/_test.scss' as *;
 @media (min-width: $breakpoint-desktop) {
-  body{
-  .test1 {
-    @include flex-center;
-    background-color: $purple;
-    p {
-      color: $gold;
+  body {
+    .root {
+      height: 100lvh;
+      @include flex-column-between;
+      .test1 {
+        @include flex-center;
+        background-color: $purple;
+        p {
+          color: $gold;
+        }
+      }
     }
   }
-}
 }

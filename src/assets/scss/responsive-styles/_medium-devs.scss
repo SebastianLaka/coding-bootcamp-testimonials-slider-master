@@ -2,13 +2,16 @@
 @use './_breakpoints.scss' as *;
 @use '../mixins/_test.scss' as *;
 @media (min-width: $breakpoint-tablet) {
-  body{
-  .test1 {
-    @include flex-center;
-    background-color: $yellow;
-    p {
-      color: $black;
+  body {
+    .root {
+      height: 100dvh;
+      .test1 {
+        @include flex-center;
+        background-color: $yellow;
+        p {
+          color: $black;
+        }
+      }
     }
   }
-}
 }
