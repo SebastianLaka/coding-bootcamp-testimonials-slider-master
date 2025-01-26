@@ -3,6 +3,7 @@ import fontsComponent from './components/fonts-component.vue';
 </script>
 
 <template>
+  <link rel="icon" type="ico" href="/static/favicon-32x32.png"/>
 <fontsComponent/>
   <div class="root">
     <div class="test1">
