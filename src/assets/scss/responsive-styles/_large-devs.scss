@@ -1,6 +1,6 @@
 @use '../basic-styles/basic-app-styles.scss' as *;
 @use './_breakpoints.scss' as *;
-@use '../mixins/_test.scss' as *;
+@use '../mixins/app-mixins.scss' as *;
 @media (min-width: $breakpoint-desktop) {
   body {
     .root {

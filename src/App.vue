@@ -1,6 +1,6 @@
 <script setup>
-import fontsComponent from './components/fonts-component.vue'
-import imageComponent from './components/image-component.vue'
+import fontsComponent from './components/fonts-component.vue';
+import imageComponent from './components/image-component.vue';
 </script>
 
 <template>

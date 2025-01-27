@@ -24,7 +24,7 @@ export default defineConfig({
       scss: {
         additionalData: `
         @use "@/assets/scss/basic-styles/basic-app-styles.scss" as *;
-        @use "@/assets/scss/mixins/_test.scss" as *;
+        @use "@/assets/scss/mixins/app-mixins.scss" as *;
         @use "@/assets/scss/responsive-styles/media-queries.scss" as *;
         `,
       }
