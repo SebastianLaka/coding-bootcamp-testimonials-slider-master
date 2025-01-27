@@ -5,13 +5,6 @@
   body {
     .root {
       height: 100svh;
-      .test1 {
-        @include flex-center;
-        background-color: $yellow;
-        p {
-          color: $black;
-        }
-      }
     }
   }
 }

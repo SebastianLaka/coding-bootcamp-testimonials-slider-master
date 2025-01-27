@@ -1,22 +1,11 @@
 <script setup>
-import fontsComponent from './components/fonts-component.vue';
+import fontsComponent from './components/fonts-component.vue'
+import imageComponent from './components/image-component.vue'
 </script>
 
 <template>
-  <link rel="icon" type="ico" href="/static/favicon-32x32.png"/>
-<fontsComponent/>
-  <div class="root">
-    <div class="test1">
-      <h1>header 1</h1>
-      <p>Test</p>
-    </div>
-    <div class="test1">
-      <p>Test</p>
-    </div>
-    <div class="test1">
-      <p>Test</p>
-    </div>
-  </div>
+  <fontsComponent />
+  <imageComponent />
 </template>
 
 <style lang="scss">

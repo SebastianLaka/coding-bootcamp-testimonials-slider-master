@@ -6,13 +6,6 @@
     .root {
       height: 100svh;
       @include flex-column-between;
-      .test1 {
-        @include flex-center;
-        background-color: $purple;
-        p {
-          color: $gold;
-        }
-      }
     }
   }
 }

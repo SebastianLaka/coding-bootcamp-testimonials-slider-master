@@ -4,20 +4,5 @@
 @media (min-width: $breakpoint-small) {
   body {
     min-height: 100svh;
-    .root {
-      @include flex-row-between;
-      .test1 {
-        width: 100%;
-        background-color: $red;
-        h1{
-          color: $dark-blue-color;
-        }
-        p {
-          color: $grayish-blue-color;
-          font-size: $basic-font-size;
-          font-family: $font-inter;
-        }
-      }
-    }
   }
 }
