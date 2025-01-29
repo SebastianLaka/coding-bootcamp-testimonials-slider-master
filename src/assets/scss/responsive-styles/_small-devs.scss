@@ -3,19 +3,23 @@
 @use '../mixins/app-mixins.scss' as *;
 @media (min-width: $breakpoint-small) {
   body {
-    min-height: 100svh;
     .card-component {
-      max-width: 25%;
+      border: 1px solid red;
+      min-width: 25%;
       @include flex-column-between;
       &__image {
         display: block;
         height: auto;
+        width: 100%;
       }
       .card-description {
-        @include flex-column;
+        @include flex-column-center;
         gap: 1em 0;
+        padding: 0 .5em;
         &__about-person {
           color: $dark-blue-color;
+          max-width: 200ch;
+          text-align: center;
         }
         .card-person-signature {
           &__person-name {
