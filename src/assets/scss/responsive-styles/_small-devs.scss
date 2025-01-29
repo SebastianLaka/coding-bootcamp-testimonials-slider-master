@@ -4,15 +4,28 @@
 @media (min-width: $breakpoint-small) {
   body {
     min-height: 100svh;
-    .card-component{
-      width: 75%;
+    .card-component {
+      width: 25%;
       @include flex-column-between;
-      &__image{
+      &__image {
         display: block;
         height: auto;
       }
-      .card-description{
-       @include flex-column;
+      .card-description {
+        @include flex-column;
+        gap: 1em 0;
+        &__about-person {
+          color: $dark-blue-color;
+        }
+        .card-person-signature {
+          &__person-name {
+            color: $dark-blue-color;
+            font-weight: $font-bold-weight;
+          }
+          &__person-job{
+            color: $grayish-blue-color;
+          }
+        }
       }
     }
   }
