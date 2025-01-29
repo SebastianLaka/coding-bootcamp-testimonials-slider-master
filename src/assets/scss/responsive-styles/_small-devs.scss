@@ -4,10 +4,16 @@
 @media (min-width: $breakpoint-small) {
   body {
     min-height: 100svh;
-    div{
+    .card-component{
       width: 75%;
-      @include flex-center;
-      
+      @include flex-column-between;
+      &__image{
+        display: block;
+        height: auto;
+      }
+      .card-description{
+       @include flex-column;
+      }
     }
   }
 }
