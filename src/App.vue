@@ -1,11 +1,13 @@
 <script setup>
 import fontsComponent from './components/fonts-component.vue';
-import tanyaComponent from './components/tanya-component/woman-img-part-component.vue';
+import tanyaComponent from './components/tanya-component/woman-card-component.vue';
+import johnCardComponent from './components/john-component/john-card-component.vue';
 </script>
 
 <template>
   <fontsComponent />
   <tanyaComponent />
+  <johnCardComponent/>
 </template>
 
 <style lang="scss">
