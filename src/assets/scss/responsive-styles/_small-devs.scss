@@ -5,7 +5,7 @@
   body {
     min-height: 100svh;
     .card-component {
-      width: 25%;
+      max-width: 25%;
       @include flex-column-between;
       &__image {
         display: block;
