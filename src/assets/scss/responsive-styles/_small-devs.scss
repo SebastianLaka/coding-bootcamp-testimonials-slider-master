@@ -15,7 +15,7 @@
       .card-description {
         @include flex-column-center;
         gap: 1em 0;
-        padding: 0 .5em;
+        padding: 0 .5em .5em .5em;
         &__about-person {
           color: $dark-blue-color;
           max-width: 200ch;
