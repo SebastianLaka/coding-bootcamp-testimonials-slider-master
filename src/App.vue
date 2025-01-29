@@ -1,11 +1,11 @@
 <script setup>
 import fontsComponent from './components/fonts-component.vue';
-import imageComponent from './components/image-component.vue';
+import tanyaComponent from './components/tanya-component/woman-img-part-component.vue';
 </script>
 
 <template>
   <fontsComponent />
-  <imageComponent />
+  <tanyaComponent />
 </template>
 
 <style lang="scss">
