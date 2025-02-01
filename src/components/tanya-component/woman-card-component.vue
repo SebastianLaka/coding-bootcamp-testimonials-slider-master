@@ -1,8 +1,9 @@
 <template>
   <div class="card-component">
     <div class="card-image-area">
-      <img src="../icons/image-tanya.jpg" alt="Tanya image" class="card-image-area__image" />
       <img src="../icons/pattern-bg.svg" alt="" class="card-image-area__bg-img" />
+      <img src="../icons/image-tanya.jpg" alt="Tanya image" class="card-image-area__image" />
+   
     </div>
     <div class="card-description">
       <p class="card-description__about-person">
