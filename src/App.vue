@@ -7,7 +7,7 @@ import johnCardComponent from './components/john-component/john-card-component.v
 <template>
   <fontsComponent />
   <tanyaComponent />
-  <johnCardComponent/>
+  <!-- <johnCardComponent/> -->
 </template>
 
 <style lang="scss">
