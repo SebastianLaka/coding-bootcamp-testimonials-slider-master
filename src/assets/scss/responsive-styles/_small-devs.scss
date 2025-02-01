@@ -4,9 +4,11 @@
 @media (min-width: $breakpoint-small) {
   body {
     .card-component {
-      border: 1px solid red;
+      border: 0.1em solid red;
+     
+      @include flex-column-evenly;
       min-width: 25%;
-      @include flex-column-between;
+      height: 100svh;
       &__image {
         display: block;
         height: auto;
