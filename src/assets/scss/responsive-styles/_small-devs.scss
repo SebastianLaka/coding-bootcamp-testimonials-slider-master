@@ -7,21 +7,22 @@
       @include flex-column-evenly;
       height: 100svh;
       .card-image-area {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 2em;
+        @include flex-row-center;
+        padding: 3em;
         background-image: url(../images/pattern-bg.svg);
         background-position: center;
         background-repeat: no-repeat;
         background-size: 100% 100%;
         &__image {
+          position: relative;
           display: block;
           width: 100%;
           border-radius: 8%;
           object-fit: contain;
-          padding: 1em
+          z-index: 0;
+          box-shadow: 1em 5em 3.3em -3.7em $dark-blue-color;
         }
+        
       }
       .card-description {
         @include flex-column-center;
