@@ -3,18 +3,21 @@
 @use '../mixins/app-mixins.scss' as *;
 @media (min-width: $breakpoint-desktop) {
   body {
+    
     .card-component {
      display: grid;
-     grid-template-columns: 60% 40%;
+     grid-template-columns: repeat(6, 1fr);
      grid-template-rows: 25% 50% 25%;
+     margin: 0 auto;
      .card-image-area{
-      grid-column: 2/3;
+      grid-column: 4/6;
       grid-row: 2/3;
      }
      .card-description{
       @include flex-column;
       justify-content: center;
       align-items: start;
+      grid-column: 2/4;
       grid-row: 2/3;
       text-align-last: left;
       &__about-person{
