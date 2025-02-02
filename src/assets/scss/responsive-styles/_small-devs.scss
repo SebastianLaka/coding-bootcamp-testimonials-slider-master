@@ -25,7 +25,7 @@
         .buttons-area{
           @include flex-row-between;
           position: absolute;
-          background-color: $dark-blue-color;
+          background-color: $cta-color;
           bottom: .75em;
           min-height: 7.5%;
           min-width: 7em;

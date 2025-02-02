@@ -7,21 +7,32 @@
     .card-component {
      display: grid;
      grid-template-columns: repeat(6, 1fr);
-     grid-template-rows: 25% 50% 25%;
+     grid-template-rows: repeat(6, 1fr);
      margin: 0 auto;
      .card-image-area{
       grid-column: 4/6;
-      grid-row: 2/3;
+      grid-row: 2/6;
+      padding: 4em;
+      &__image{
+        max-width: 100%;
+        border-radius: 1em;
+        box-shadow: -0.1em 5em 3.3em -3.7em $dark-blue-color;
+      }
+      .buttons-area{
+        bottom: 1.5em;
+        left: 5em;
+      }
      }
      .card-description{
       @include flex-column;
       justify-content: center;
       align-items: start;
       grid-column: 2/4;
-      grid-row: 2/3;
+      grid-row: 2/6;
       text-align-last: left;
       &__about-person{
-        text-align-last: left;
+        text-align: left;
+        font-size: $primary-font-size;
       }
       .card-person-signature{
         @include flex-row-left;

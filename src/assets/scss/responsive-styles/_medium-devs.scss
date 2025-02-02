@@ -6,15 +6,8 @@
     .card-component{
       .card-image-area {
         padding: 2.5em;
-      
         .buttons-area{
-          @include flex-row-between;
-          position: absolute;
-          background-color: $dark-blue-color;
           bottom: 1.1em;
-          min-height: 7.5%;
-          border-radius: 8em;
-          padding: .45em;
           &__button-right, &__button-left{
             border: none;
             color: transparent;
