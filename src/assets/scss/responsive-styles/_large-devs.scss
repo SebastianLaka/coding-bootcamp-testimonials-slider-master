@@ -3,9 +3,28 @@
 @use '../mixins/app-mixins.scss' as *;
 @media (min-width: $breakpoint-desktop) {
   body {
-    .root {
-      height: 100svh;
-      @include flex-column-between;
+    .card-component {
+     display: grid;
+     grid-template-columns: 60% 40%;
+     grid-template-rows: 25% 50% 25%;
+     .card-image-area{
+      grid-column: 2/3;
+      grid-row: 2/3;
+     }
+     .card-description{
+      @include flex-column;
+      justify-content: center;
+      align-items: start;
+      grid-row: 2/3;
+      text-align-last: left;
+      &__about-person{
+        text-align-last: left;
+      }
+      .card-person-signature{
+        @include flex-row-left;
+        gap: .5em;
+      }
+     }
     }
   }
 }

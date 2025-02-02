@@ -3,8 +3,27 @@
 @use '../mixins/app-mixins.scss' as *;
 @media (min-width: $breakpoint-tablet) {
   body {
-    .root {
-      height: 100svh;
+    .card-component{
+      .card-image-area {
+        padding: 2.5em;
+      
+        .buttons-area{
+          @include flex-row-between;
+          position: absolute;
+          background-color: $dark-blue-color;
+          bottom: 1.1em;
+          min-height: 7.5%;
+          border-radius: 8em;
+          padding: .45em;
+          &__button-right, &__button-left{
+            border: none;
+            color: transparent;
+            background-color: transparent;
+            padding: .4em 0.75em 0;
+            cursor: pointer;
+          }
+        }
+      }
     }
   }
 }
