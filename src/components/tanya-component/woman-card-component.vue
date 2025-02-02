@@ -1,7 +1,7 @@
 <template>
   <div class="card-component">
     <div class="card-image-area">
-      <img src="../icons/pattern-bg.svg" alt="" class="card-image-area__bg-img" />
+      <!-- <img src="../icons/pattern-bg.svg" alt="" class="card-image-area__bg-img" /> -->
       <img src="../icons/image-tanya.jpg" alt="Tanya image" class="card-image-area__image" />
    
     </div>

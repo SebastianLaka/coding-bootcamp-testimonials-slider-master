@@ -6,27 +6,21 @@
     .card-component {
       @include flex-column-evenly;
       height: 100svh;
-      padding: 2em;
       .card-image-area {
         display: flex;
         justify-content: center;
-        position: relative;
-        width: 100%;
-        z-index: 1;
+        align-items: center;
+        padding: 2em;
+        background-image: url(../images/pattern-bg.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
         &__image {
           display: block;
-          height: auto;
-          width: 80%;
-          height: 80%;
-          border-radius: 0.8em;
-        }
-        &__bg-img {
-          position: absolute;
-          inset: -0.5em -2.5em 0 0;
-          width: 92%;
-          height: 82.5%;
-          transform: scale(1.2);
-          z-index: -99;
+          width: 100%;
+          border-radius: 8%;
+          object-fit: contain;
+          padding: 1em
         }
       }
       .card-description {
