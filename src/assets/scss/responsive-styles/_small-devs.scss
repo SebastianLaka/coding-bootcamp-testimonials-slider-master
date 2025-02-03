@@ -31,6 +31,7 @@
           min-width: 7em;
           border-radius: 8em;
           padding: .45em;
+          box-shadow: 0 .1em .2em .1em $grayish-blue-color;
           &__button-right, &__button-left{
             border: none;
             color: transparent;
