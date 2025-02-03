@@ -3,42 +3,43 @@
 @use '../mixins/app-mixins.scss' as *;
 @media (min-width: $breakpoint-desktop) {
   body {
-    
     .card-component {
-     display: grid;
-     grid-template-columns: repeat(6, 1fr);
-     grid-template-rows: repeat(6, 1fr);
-     margin: 0 auto;
-     .card-image-area{
-      grid-column: 4/6;
-      grid-row: 2/6;
-      &__image{
-        border-radius: 1em;
-        box-shadow: -0.1em 5em 3.3em -3.7em $dark-blue-color;
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      grid-template-rows: repeat(6, 1fr);
+      padding: 0;
+      .card-image-area {
+        grid-column: 4/6;
+        grid-row: 2/6;
+        // padding: 4em;
+        max-height: 100%;
+        &__image {
+          border-radius: 1em;
+          min-height: 100%;
+          box-shadow: -0.1em 5em 3.3em -3.7em $dark-blue-color;
+        }
+        .buttons-area {
+          bottom: 1em;
+          left: 6em;
+        }
       }
-      .buttons-area{
- 
-        bottom: -1em;
-        left: 2em;
-      }
-     }
-     .card-description{
-      @include flex-column;
-      justify-content: center;
-      align-items: start;
-      grid-column: 2/4;
-      grid-row: 2/6;
-      text-align: left;
-      margin-right: 1em;
-      &__about-person{
+      .card-description {
+        @include flex-column;
+        justify-content: center;
+        align-items: start;
+        grid-column: 2/4;
+        grid-row: 2/6;
         text-align: left;
-        font-size: $primary-font-size;
+        margin-right: 1em;
+        &__about-person {
+          text-align: left;
+          font-size: $primary-font-size;
+        }
+        .card-person-signature {
+          @include flex-row-left;
+          gap: 0.5em;
+        }
       }
-      .card-person-signature{
-        @include flex-row-left;
-        gap: .5em;
-      }
-     }
     }
   }
 }

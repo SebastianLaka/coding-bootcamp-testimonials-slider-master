@@ -19,7 +19,7 @@
           display: block;
           max-width: 100%;
           border-radius: 8%;
-          object-fit: contain;
+          object-fit: cover;
           z-index: 0;
           box-shadow: 1em 5em 3.3em -3.7em $dark-blue-color;
         }
@@ -28,7 +28,6 @@
           position: absolute;
           background-color: $cta-color;
           bottom: 2em;
-          min-height: 7.5%;
           min-width: 7em;
           border-radius: 8em;
           padding: .45em;

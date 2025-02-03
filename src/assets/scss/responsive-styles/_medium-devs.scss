@@ -1,18 +1,18 @@
-@use '../basic-styles/basic-app-styles.scss' as *;
-@use './_breakpoints.scss' as *;
-@use '../mixins/app-mixins.scss' as *;
-@media (min-width: $breakpoint-tablet) {
-  body {
-    .card-component{
-      .card-image-area {
-        .buttons-area{
-          &__button-right, &__button-left{
+// @use '../basic-styles/basic-app-styles.scss' as *;
+// @use './_breakpoints.scss' as *;
+// @use '../mixins/app-mixins.scss' as *;
+// @media (min-width: $breakpoint-tablet) {
+//   body {
+//     .card-component{
+//       .card-image-area {
+//         .buttons-area{
+//           &__button-right, &__button-left{
            
-            // padding: .4em 0.75em 0;
-            cursor: pointer;
-          }
-        }
-      }
-    }
-  }
-}
+//             // padding: .4em 0.75em 0;
+//             cursor: pointer;
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
