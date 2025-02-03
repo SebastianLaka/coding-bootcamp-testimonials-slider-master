@@ -12,15 +12,14 @@
      .card-image-area{
       grid-column: 4/6;
       grid-row: 2/6;
-      padding: 4em;
       &__image{
-        max-width: 100%;
         border-radius: 1em;
         box-shadow: -0.1em 5em 3.3em -3.7em $dark-blue-color;
       }
       .buttons-area{
-        bottom: 2em;
-        left: 5em;
+ 
+        bottom: -1em;
+        left: 2em;
       }
      }
      .card-description{
@@ -29,7 +28,8 @@
       align-items: start;
       grid-column: 2/4;
       grid-row: 2/6;
-      text-align-last: left;
+      text-align: left;
+      margin-right: 1em;
       &__about-person{
         text-align: left;
         font-size: $primary-font-size;

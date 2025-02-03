@@ -6,9 +6,10 @@
     .card-component {
       @include flex-column-evenly;
       height: 100svh;
+      padding: 1em;
       .card-image-area {
         @include flex-row-center;
-        padding: 2em;
+        padding: 3em;
         background-image: url(../images/pattern-bg.svg);
         background-position: center;
         background-repeat: no-repeat;
@@ -16,7 +17,7 @@
         position: relative;
         &__image {
           display: block;
-          max-width: 60%;
+          max-width: 100%;
           border-radius: 8%;
           object-fit: contain;
           z-index: 0;
@@ -26,7 +27,7 @@
           @include flex-row-between;
           position: absolute;
           background-color: $cta-color;
-          bottom: .75em;
+          bottom: 2em;
           min-height: 7.5%;
           min-width: 7em;
           border-radius: 8em;

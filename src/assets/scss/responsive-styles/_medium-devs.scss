@@ -5,14 +5,10 @@
   body {
     .card-component{
       .card-image-area {
-        padding: 2.5em;
         .buttons-area{
-          bottom: 1.1em;
           &__button-right, &__button-left{
-            border: none;
-            color: transparent;
-            background-color: transparent;
-            padding: .4em 0.75em 0;
+           
+            // padding: .4em 0.75em 0;
             cursor: pointer;
           }
         }
