@@ -45,6 +45,9 @@
         @include flex-column-center;
         gap: 1em 0;
         padding: 1em;
+        background-image: url(../images/pattern-quotes.svg);
+        background-repeat: no-repeat;
+        background-position: top center;
         &__about-person {
           color: $dark-blue-color;
           max-width: 65ch;
