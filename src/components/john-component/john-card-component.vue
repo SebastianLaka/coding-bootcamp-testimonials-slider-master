@@ -5,8 +5,8 @@
       <img src="../icons/image-john.jpg" alt="Tanya image" class="card-image-area__image" />
       
       <div class="buttons-area">
-        <button class="buttons-area__button-left"><img src="../icons/icon-prev.svg" alt="Button right in slider"></button>
-        <button class="buttons-area__button-right"><img src="../icons/icon-next.svg" alt="Button left in slider"></button>
+        <button class="buttons-area__button-left buttons-area__slider-btn"><img src="../icons/icon-prev.svg" alt="Button right in slider"></button>
+        <button class="buttons-area__button-right buttons-area__slider-btn"><img src="../icons/icon-next.svg" alt="Button left in slider"></button>
         
       </div>
     </div>
