@@ -6,11 +6,19 @@ import { ref } from 'vue';
 
 const countSlide = ref(0);
 
+const slider = (event) => {
+  if(event === 'right'){
+    console.log(`Kliknięty przycisk: ${event}`);
+  }else{
+    console.log(`Kliknięty przycisk: ${event}`);
+  }
+}
+slider();
 </script>
 <template>
   <fontsComponent />
-  <tanyaComponent  />
-  <johnComponent  />
+  <tanyaComponent @slide="slider" />
+  <johnComponent />
 </template>
 
 <style lang="scss">
