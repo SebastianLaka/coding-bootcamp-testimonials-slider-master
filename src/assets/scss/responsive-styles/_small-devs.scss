@@ -3,6 +3,7 @@
 @use '../mixins/app-mixins.scss' as *;
 @media (min-width: $breakpoint-small) {
   body {
+    overflow: hidden;
     .card-component {
       @include flex-column-evenly;
       height: 100svh;

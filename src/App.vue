@@ -2,22 +2,15 @@
 import fontsComponent from './components/fonts-component.vue'
 import tanyaComponent from './components/tanya-component/woman-card-component.vue'
 import johnComponent from './components/john-component/john-card-component.vue'
-import { onMounted } from 'vue';
+import { ref } from 'vue';
 
-onMounted(() => {
-  const buttons = document.querySelectorAll('.buttons-area__slider-btn');
+const countSlide = ref(0);
 
-  buttons.forEach(button => {
-    button.addEventListener('click', (event) => {
-      console.log('Clicked!', event.target);
-    });
-  });
-});
 </script>
 <template>
   <fontsComponent />
-  <tanyaComponent />
-  <johnComponent />
+  <tanyaComponent  />
+  <johnComponent  />
 </template>
 
 <style lang="scss">
