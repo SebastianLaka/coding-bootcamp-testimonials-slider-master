@@ -8,7 +8,7 @@ const currSlide = ref(0);
 
 const slider = () => {
   const slidesCount = 2;
-  if(currSlide > 0){
+  if(currSlide === 0){
   currSlide.value = (currSlide.value.length - 1 + slidesCount) % slidesCount;
   }else{
     currSlide.value = (currSlide.value + 1) % slidesCount;
