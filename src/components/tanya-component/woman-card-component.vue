@@ -3,10 +3,14 @@
     <div class="card-image-area">
       <!-- <img src="../icons/pattern-bg.svg" alt="" class="card-image-area__bg-img" /> -->
       <img src="../icons/image-tanya.jpg" alt="Tanya image" class="card-image-area__image" />
-      
+
       <div class="buttons-area">
-        <button @click="$emit('slide', 'left')" class="buttons-area__button-left"><img src="../icons/icon-prev.svg" alt="Button right in slider"></button>
-        <button @click="$emit('slide', 'right')" class="buttons-area__button-right"><img src="../icons/icon-next.svg" alt="Button left in slider"></button>
+        <button @click="$emit('slide', 'left')" class="buttons-area__button-left">
+          <img src="../icons/icon-prev.svg" alt="Button right in slider" />
+        </button>
+        <button @click="$emit('slide', 'right')" class="buttons-area__button-right">
+          <img src="../icons/icon-next.svg" alt="Button left in slider" />
+        </button>
       </div>
     </div>
     <div class="card-description">
@@ -23,6 +27,7 @@
   </div>
 </template>
 <script setup>
-import { defineEmits } from 'vue';
-const emit = defineEmits(['slide']);
+
+const emit = defineEmits(['slide'])
+
 </script>

@@ -4,23 +4,26 @@ import tanyaComponent from './components/tanya-component/woman-card-component.vu
 import johnComponent from './components/john-component/john-card-component.vue'
 import { ref } from 'vue';
 
-const countSlide = ref(0);
+const currSlide = ref(0);
 
-const slider = (event) => {
-  if(event === 'right'){
-    console.log(`Kliknięty przycisk: ${event}`);
+const slider = () => {
+  const slidesCount = 2;
+  if(currSlide === 0){
+  currSlide.value = (currSlide.value.length - 1 + slidesCount) % slidesCount;
   }else{
-    console.log(`Kliknięty przycisk: ${event}`);
+    currSlide.value = (currSlide.value + 1) % slidesCount;
   }
 }
+
 slider();
 </script>
 <template>
   <fontsComponent />
-  <tanyaComponent @slide="slider" />
-  <johnComponent />
+  <tanyaComponent v-if="currSlide === 1" @slide="slider" />
+  <johnComponent v-if="currSlide === 0" @slide="slider" />
 </template>
 
 <style lang="scss">
 @use '@/assets/scss/responsive-styles/media-queries.scss' as *;
+
 </style>
