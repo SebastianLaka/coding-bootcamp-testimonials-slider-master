@@ -8,6 +8,7 @@
       @include flex-column-evenly;
       height: 100svh;
       padding: 1em;
+      
       .card-image-area {
         @include flex-row-center;
         padding: 3em;
@@ -24,20 +25,21 @@
           z-index: 0;
           box-shadow: 1em 5em 3.3em -3.7em $dark-blue-color;
         }
-        .buttons-area{
+        .buttons-area {
           @include flex-row-between;
           position: absolute;
           background-color: $cta-color;
           bottom: 2em;
           min-width: 7em;
           border-radius: 8em;
-          padding: .45em;
-          box-shadow: 0 .1em .2em .1em $grayish-blue-color;
-          &__button-right, &__button-left{
+          padding: 0.45em;
+          box-shadow: 0 0.1em 0.2em 0.1em $grayish-blue-color;
+          &__button-right,
+          &__button-left {
             border: none;
             color: transparent;
             background-color: transparent;
-            padding: .4em 0.75em 0;
+            padding: 0.4em 0.75em 0;
             cursor: pointer;
           }
         }

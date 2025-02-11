@@ -5,13 +5,19 @@ import johnComponent from './components/john-component/john-card-component.vue'
 import { ref } from 'vue';
 
 const currSlide = ref(0);
+const slidesCount = 2;
 
-const slider = () => {
-  const slidesCount = 2;
+const slideRight = () => {
+    currSlide.value = (currSlide.value.length - 1 + slidesCount) % slidesCount;
+}
+const slideLeft = () =>{
+  currSlide.value = (currSlide.value + 1) % slidesCount;
+}
+const slider = () =>{
   if(currSlide === 0){
-  currSlide.value = (currSlide.value.length - 1 + slidesCount) % slidesCount;
+    slideRight()
   }else{
-    currSlide.value = (currSlide.value + 1) % slidesCount;
+    slideLeft()
   }
 }
 
