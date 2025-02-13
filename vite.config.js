@@ -7,6 +7,7 @@ import nightwatchPlugin from 'vite-plugin-nightwatch'
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: '/https://github.com/SebastianLaka/coding-bootcamp-testimonials-slider-master',
   plugins: [
     vue(),
     vueDevTools(),
