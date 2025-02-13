@@ -10,8 +10,7 @@
     "test:e2e": "nightwatch tests/e2e/*",
     "test:unit": "nightwatch src/**/__tests__/*",
     "lint": "eslint . --fix",
-    "format": "prettier --write src/",
-    "deploy": "node scripts/coding-bootcamp-testimonials-slider-master"
+    "format": "prettier --write src/"
   },
   "devDependencies": {
     "@eslint/js": "^9.18.0",
@@ -31,7 +30,6 @@
     "vite": "^6.0.11",
     "vite-plugin-nightwatch": "^0.4.6",
     "vite-plugin-vue-devtools": "^7.7.0",
-    "vue": "^3.5.13",
-    "execa": "latest"
+    "vue": "^3.5.13"
   }
 }
