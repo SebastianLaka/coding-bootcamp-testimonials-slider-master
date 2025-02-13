@@ -5,11 +5,9 @@ import vue from '@vitejs/plugin-vue'
 import vueDevTools from 'vite-plugin-vue-devtools'
 import nightwatchPlugin from 'vite-plugin-nightwatch'
 
-module.exports = {
-  base: '/coding-bootcamp-testimonials-slider-master/',
-}
 // https://vite.dev/config/
 export default defineConfig({
+  base: '/coding-bootcamp-testimonials-slider-master/',
   plugins: [
     vue(),
     vueDevTools(),
