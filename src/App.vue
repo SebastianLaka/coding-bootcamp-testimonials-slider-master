@@ -8,19 +8,18 @@ const currSlide = ref(0);
 const slidesCount = 2;
 
 const slideRight = () => {
-    currSlide.value = (currSlide.value.length - 1 + slidesCount) % slidesCount;
+    currSlide.value = (currSlide.value - 1 + slidesCount) % slidesCount;
 }
 const slideLeft = () =>{
   currSlide.value = (currSlide.value + 1) % slidesCount;
 }
 const slider = () =>{
-  if(currSlide === 0){
+  if(currSlide.value === 0){
     slideRight()
   }else{
     slideLeft()
   }
 }
-
 slider();
 </script>
 <template>
