@@ -15,8 +15,8 @@
         “ If you want to lay the best foundation possible I’d recommend taking this course. The depth the instructors go into is incredible. I now feel so confident about starting up as a professional developer. ”
       </p>
       <div class="card-person-signature">
-        <p class="card-person-signature__person-name">Tanya Sinclair</p>
-        <p class="card-person-signature__person-job">UX Engineer</p>
+        <p class="card-person-signature__person-name">John Trakpor</p>
+        <p class="card-person-signature__person-job">Junior Front-end Developer</p>
       </div>
     </div>
   </div>
